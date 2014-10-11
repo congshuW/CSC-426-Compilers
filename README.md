@@ -1,4 +1,4 @@
 CSC-426-Compilers
 =================
 
-YASL Compiler
+YASL Compiler.
