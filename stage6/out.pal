@@ -1,0 +1,75 @@
+$junk #1
+$main movw sp r0
+addw #12 sp
+movw sp r1
+addw #4 sp
+movw #20 +12@r0
+movw +12@r0 @r1
+movw r1 sp
+addw #4 sp
+movw @r1 +0@r0
+movw r1 sp
+movw sp r1
+addw #4 sp
+movw #5 +16@r0
+movw +16@r0 @r1
+movw r1 sp
+addw #4 sp
+movw @r1 +4@r0
+movw r1 sp
+movw sp r1
+addw #4 sp
+movw #10 +20@r0
+movw +20@r0 @r1
+movw r1 sp
+addw #4 sp
+movw @r1 +8@r0
+movw r1 sp
+movw +0@r0 @sp
+addw #4 sp
+movw +8@r0 +0@r0
+movw -4@sp +8@r0
+subw #4 sp
+outb ^1
+outb ^5
+outb ^:
+outb #32
+movw sp r1
+addw #4 sp
+movw +0@r0 +24@r0
+addw +4@r0 +24@r0
+movw +24@r0 @r1
+movw r1 sp
+addw #4 sp
+outw @r1
+movw r1 sp
+outb #32
+outb ^5
+outb ^:
+outb #32
+movw sp r1
+addw #4 sp
+movw +0@r0 +28@r0
+subw +4@r0 +28@r0
+movw +28@r0 @r1
+movw r1 sp
+addw #4 sp
+outw @r1
+movw r1 sp
+outb #32
+outb ^5
+outb ^0
+outb ^:
+outb #32
+movw sp r1
+addw #4 sp
+movw +0@r0 +32@r0
+mulw +4@r0 +32@r0
+movw +32@r0 @r1
+movw r1 sp
+addw #4 sp
+outw @r1
+movw r1 sp
+inb $junk
+inb $junk
+end

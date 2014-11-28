@@ -1,0 +1,17 @@
+program demo;
+	int x, y, a, b, sum;
+
+begin
+	cout<<'Please enter a number';
+	cin>>a;
+	cout<<'Another please';
+	cin>>b;
+	x = a;
+	y = b;
+
+	sum = x + 7;
+	cout<<endl;
+	cout<<'press cr to see answer';
+	cin;
+	cout<<'Sum is' << sum <<endl
+end.
