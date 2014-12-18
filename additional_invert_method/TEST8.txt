@@ -1,0 +1,56 @@
+program demo;
+	int x;
+	boolean b;
+
+	function notUsed;
+		int y;
+		boolean z;
+	begin
+		cout << 'hi' << endl; // hi
+		x = 3;
+		y = 2;
+		z = false;
+		b = true;
+
+		invert x;
+		cout << x <<endl; // -3
+		invert x;
+		cout << x << endl; // 3
+		invert x;
+		cout << x << endl;  // -3
+		
+		invert y;
+		cout << y << endl; // -2
+
+		x = 99;
+		invert x;
+		cout << x << endl; // -99
+		invert x;
+		cout << x << endl; // 99
+		
+		invert z;
+		cout << z << endl; // 1
+		invert z;
+		cout << z << endl; // 0
+		
+		invert b;
+		cout << b << endl; // 0
+		invert b;
+		cout << b << endl // 1
+	end;
+
+begin
+	notUsed;
+	x = 23;
+	b = false;
+
+	invert x;
+	cout << x << endl; // -23
+	
+	invert b;
+	cout << b << endl; // 1
+
+	invert x;
+	cout << x << endl; // 23
+
+end.

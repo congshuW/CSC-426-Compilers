@@ -1,0 +1,15 @@
+program demo;
+	int y;
+
+	function foo (int &x);
+	begin
+		x = x + 3;
+		invert x;
+		cout << x << endl // -6
+	end;
+
+begin 
+	y = 3;
+	foo(y);
+	cout << y << endl
+end.

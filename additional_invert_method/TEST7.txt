@@ -1,0 +1,20 @@
+program demo;
+	int x;
+	boolean b;
+	
+begin
+	x = 23;
+	b = false;
+	invert x;
+	cout << x << endl; // -23
+	invert b;
+	cout << b << endl; // 1
+	invert x;
+	cout << x << endl; // 23
+	invert b;
+	cout << b << endl; // 0
+	invert b;
+	invert x;
+	cout << x << endl; // -23
+	cout << b << endl // 1
+end.

@@ -1,0 +1,26 @@
+program demo;
+	int x;
+	boolean b;
+
+	function notUsed;
+	begin
+		cout << 'hi' << endl // hi
+	end;
+
+begin
+	x = 3;
+		invert x;
+		cout << x <<endl; // -3
+		invert x;
+		cout << x << endl; // 3
+		
+		x = 0;
+		invert x;
+		cout << x << endl; // 0
+		
+		b = true;
+		invert b;
+		cout << b << endl; // 0
+		invert b;
+		cout << b << endl // 1
+end.

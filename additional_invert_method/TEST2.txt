@@ -1,0 +1,20 @@
+program demo;
+
+	int x, y;
+	
+	function foo;
+		int x;
+	begin
+		x = 8;
+		x = x + 1;
+		y = y + 1;
+		cout << x << y << endl
+	end;
+
+begin
+	x = 5;
+	y = 10;
+	foo;
+	cout<<x<<y<<endl
+end.
+	
