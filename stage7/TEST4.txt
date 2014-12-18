@@ -1,0 +1,16 @@
+program demo;
+
+	function blast (int n);
+	begin
+		if(n == 0) then
+			cout << 'blastoff'
+		else
+			begin
+				cout << n << endl;
+				blast (n-1)
+			end
+	end;
+
+begin
+	blast(5)
+end.		

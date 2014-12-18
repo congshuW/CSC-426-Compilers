@@ -1,0 +1,14 @@
+program demo;
+	int y;
+
+	function foo (int &x);
+	begin
+		x = x + 1;
+		cout << x << endl
+	end;
+
+begin 
+	y = 3;
+	foo(y);
+	cout << y << endl
+end.
